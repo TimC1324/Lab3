@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EECS 348 Lab Three Practice Two</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #paragraph {
+            border-style: solid;
+            border-width: 5px;
+            padding: 10px;
+            margin: 20px auto;
+            width: fit-content;
+            font-family: monospace; /* Ensure ASCII art looks correct */
+        }
+
+        input {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>EECS 348 Lab Three Practice Two</h1>
+
+    <div id="paragraph">
+        <pre><code>
+      _   _
+     (q\_/p)
+      /. .\.-""""-.      ___
+     =\_t_/=    /  `\   (
+      )\ ))__ _\    |___)
+     nn-nn`  `nn---'.
+        </code></pre>	
+    </div>
+
+    <script type="text/javascript" src="functions.js"></script>
+
+    <label>Border R(0-255): <input type="text" id="border_R"></label><br>
+    <label>Border G(0-255): <input type="text" id="border_G"></label><br>
+    <label>Border B(0-255): <input type="text" id="border_B"></label><br>
+    <label>Border Width: <input type="text" id="border_width"></label><br>
+    <label>Background R(0-255): <input type="text" id="bg_R"></label><br>
+    <label>Background G(0-255): <input type="text" id="bg_G"></label><br>
+    <label>Background B(0-255): <input type="text" id="bg_B"></label><br>
+    
+    <button onclick="alert_paragraph_color()">Change the color!</button>
+
+</body>
+</html>

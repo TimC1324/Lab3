@@ -1,0 +1,23 @@
+function alert_paragraph_color() {
+    // Get values from inputs
+    let borderR = document.getElementById("border_R").value;
+    let borderG = document.getElementById("border_G").value;
+    let borderB = document.getElementById("border_B").value;
+    let borderWidth = document.getElementById("border_width").value;
+
+    let bgR = document.getElementById("bg_R").value;
+    let bgG = document.getElementById("bg_G").value;
+    let bgB = document.getElementById("bg_B").value;
+
+    // Create CSS color strings
+    let borderColor = `rgb(${borderR}, ${borderG}, ${borderB})`;
+    let bgColor = `rgb(${bgR}, ${bgG}, ${bgB})`;
+
+    // Get the div element
+    let paragraph = document.getElementById("paragraph");
+
+    // Apply the new styles
+    paragraph.style.borderColor = borderColor;
+    paragraph.style.borderWidth = `${borderWidth}px`;
+    paragraph.style.backgroundColor = bgColor;
+}
